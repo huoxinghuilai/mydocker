@@ -10,7 +10,8 @@ import (
 	"os"
 )
 
-var runCommand = cli.Command{
+var runCommand = cli.Command{	//定义了一个名为runCommand的cli命令对象，该对象的名字为“run”，当运行该命令时，会执行该对象中声明的
+				//func(context *cli.Context)函数
 	Name:  "run",
 	Usage: `Create a container with namespace and cgroups limit ie: mydocker run -ti [image] [command]`,
 	Flags: []cli.Flag{
